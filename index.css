@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'microgramma-extended-bold';
+    src: url('./assets/fonts/Microgramma D Extended Bold.woff') format('woff');
+    src: url('./assets/fonts/Microgramma D Extended Bold.woff2') format('woff2');
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#f8aba0, #e9beb9);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'microgramma-extended-bold';
+    font-weight: normal;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+a {
+    font-family: 'microgramma-extended-bold';
+    font-weight: normal;
+    text-transform: lowercase;
+    margin: 0;
+    color: #CF223C;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#header {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+#work-list {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#bk-logo {
+    position: absolute;
+    z-index: 999;
+    top: 1%;
+    left: 1%;
+    width: 10%;
+}
