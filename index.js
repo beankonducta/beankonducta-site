@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import b from './assets/b.glb';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -18,7 +19,7 @@ const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 directionalLight.position.set( 0, 100, 0 );
 scene.add( directionalLight );
 
-loader.load('https://firebasestorage.googleapis.com/v0/b/beankonducta-site.appspot.com/o/b.glb?alt=media&token=8ab0461a-a5c2-48b3-b976-9db6dd6e3b25', function (gltf) {
+loader.load(b, function (gltf) {
     b = gltf.scene;
     b.scale.set(50, 50, 50);
     scene.add(b);
