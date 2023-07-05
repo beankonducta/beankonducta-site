@@ -18,7 +18,7 @@ const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 directionalLight.position.set( 0, 100, 0 );
 scene.add( directionalLight );
 
-loader.load('./assets/b.glb', function (gltf) {
+loader.load('https://firebasestorage.googleapis.com/v0/b/beankonducta-site.appspot.com/o/b.glb?alt=media&token=8ab0461a-a5c2-48b3-b976-9db6dd6e3b25', function (gltf) {
     b = gltf.scene;
     b.scale.set(50, 50, 50);
     scene.add(b);
