@@ -32,8 +32,8 @@ loader.load('./assets/b.glb', function (gltf) {
 function animate() {
     requestAnimationFrame(animate);
     if (b) {
-        b.rotation.y += 0.001;
-        b.rotation.x += 0.002;
+        b.rotation.y += 0.0012;
+        b.rotation.x += 0.0022;
     }
     renderer.render(scene, camera);
 }
