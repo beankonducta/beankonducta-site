@@ -12,6 +12,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 camera.position.z = 5;
+camera.position.y = -1;
 
 const loader = new GLTFLoader();
 const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
