@@ -7,6 +7,7 @@
 body {
     margin: 0;
     background: linear-gradient(#f8aba0, #e9beb9);
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,24 +31,48 @@ h1 {
 }
 
 #header {
-    position: absolute;
-    top: 2%;
-    right: 2%;
+   float: right;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-sub-container {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 1%;
+}
+
+@media screen and (min-width: 676px) {
+    #header-container {
+        display: flex;
+        flex-direction: row;
+    }
+    #work-list {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #header-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #work-list {
+        text-align: left;
+    }
 }
 
 #work-list {
-    position: absolute;
-    top: 5%;
-    right: 2%;
-    text-align: right;
     display: flex;
     flex-direction: column;
 }
 
 #bk-logo {
-    position: absolute;
-    z-index: 999;
-    top: 1%;
-    left: 1%;
     width: 10%;
+    min-width: 150px;
 }
