@@ -49,14 +49,14 @@ function onWindowResize() {
 
 let fadeInProgress = 0;
 const fadeInDuration = 1; // Duration in seconds
-let fadeInAmount = 0.001;
+let fadeInAmount = 0.0001;
 
 function animate() {
     requestAnimationFrame(animate);
 
     if (fadeInProgress < fadeInDuration) {
         fadeInProgress += fadeInAmount;
-        fadeInAmount += 0.0001;
+        fadeInAmount += 0.00001;
         const opacity = Math.min(fadeInProgress / fadeInDuration, 1);
         if (b) {
             b.traverse((child) => {
