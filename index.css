@@ -36,6 +36,16 @@ h1 {
     font-size: 2rem;
 }
 
+#github {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+}
+
+#github-img {
+    width: 50px;
+}
+
 #header {
    float: right;
 }
